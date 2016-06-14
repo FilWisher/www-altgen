@@ -5,7 +5,7 @@
   font-weight: 500;
 }
 
-body {
+body{
   background: white url("hands.svg") fixed no-repeat bottom;
 }
 
@@ -21,7 +21,7 @@ body {
 }
 
 #header #logo {
-  margin: 1em 0 2em 0;
+  margin: 1em 0;
 }
 
 #header #logo img {
