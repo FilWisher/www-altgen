@@ -60,18 +60,27 @@ body {
 }
 
 #content .subsection {
-  padding-top: 28vh;
+  padding-top: 30vh;
   height: 60em;
 }
 
-
-#content .subsection#landing #announcement {
-  height: 15em;
-  width: 15em;
-  float: left;
+#content .subsection#landing #left {
+  width: 25%;
+}
+#content .subsection#landing #middle {
+  width: 50%;
+}
+#content .subsection#landing #right { 
+  width: 25%;
 }
 
-#content .subsection#landing #announcement .circle {
+#content .subsection#landing #left #announcement {
+  height: 15em;
+  width: 15em;
+  margin: auto;
+}
+
+#content .subsection#landing #left #announcement .circle {
   background-color: rgb(255, 240, 0);
   border-radius: 100%;
   width: 100%;
@@ -91,8 +100,7 @@ body {
   background-color: black;
   width: 30em;
   height: 17em;
-  float: left;
-  margin-left: 5em;
+  margin: auto;
 }
 
 #content .subsection#manifesto #content {
@@ -119,11 +127,24 @@ body {
   font-size: 2em;
   font-weight: bold;
 }
-#content .subsection#about .content {
+#content .subsection .content {
   background-color: rgb(255, 240, 0);
   width: 100%;
   margin-bottom: 1.5em;
   padding: 1.5em;
+  font-size: 1.05em;
+}
+
+#content .subsection#what .content {
+  width: 45%;
+  margin-right: 2em;
+  height: 30em;
+}
+
+#content .subsection#cooperatives .content {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 5em;
 }
 
 .redf { color: rgb(255, 70, 0); }
@@ -137,7 +158,6 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  height: 10em;
   color: white;
 }
 
