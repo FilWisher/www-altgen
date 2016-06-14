@@ -9,7 +9,7 @@
   <div id="header">
     <div id="logo">
       <img src="logo.svg">
-      <h3>Together <span class="red">we're stronger</span></h3>
+      <h3>Together <span class="redf">we're stronger</span></h3>
     </div>
     <ul id="menu">
       <li><a href="#manifesto">MANIFESTO /</a></li> 
@@ -21,7 +21,12 @@
   </div>
   <div id="content">
     <div class="subsection" id="landing">
-      <h2>landin</h2> 
+      <div id="announcement">
+        <div class="circle">
+          <span class="bold redf">SOME KIND<br>OF NEWS<br>HERE!</span>
+        </div>
+      </div>
+      <div id="video"> </div>
     </div> 
     <div class="subsection" id="manifesto">
       <div id="content">
@@ -41,7 +46,47 @@
       </div>
     </div> 
     <div class="subsection" id="about">
-      <h2>aboot</h2> 
+      <div class="col" id="left">
+        <div id="one" class="content">
+          <h3>1</h3> 
+          <br>
+          AltGen was set up by two young graduates after personal experiences of unemployment, unpaid internships and precarious freelance work. We realised that we needed to stop compete and start cooperate. That we were not alone but thousands of us were in the same situation and that there was a generational problem, that it was not us but the current economy.
+          <br><br>
+          We discovered that the cooperative model was a practical alternative that was already transforming economies and lives all over the world.
+          <br><br>
+          We decided to organise in a workers co-operative and its aim is to re-imagine the future of work and to help our generation to create a more equal, democratic and sustainable economy. We do this in the most tangible, practical way we know: building and spreading cooperative enterprises.
+          </p>
+        </div> 
+        <div id="four" class="content">
+          <h3>4</h3> 
+          <p>
+          <br>
+          International
+          <br><br> 
+          Altgen is part of international discussions about the new economy and the commons. Having an international perspective and dialogue is essential to us. For this reason, we co-founded of the European Young Co-operators Network in 2015. This network was set up by young people working in co-operatives across Europe to campaign for a better more cooperative cooperative economy and advocate for much better recognition of the needs of young people both within
+          </p>
+        </div> 
+      </div>
+      <div class="col" id="right">
+        <div id="two" class="content">
+          <h3>2</h3>
+          <p>
+          <br>
+          In its first year 
+          <br><br> 
+          Altgen partnered with Cooperatives UK to set up the Young Co-operators Prize, which supported 5 groups of young people to start cooperatives: London-based freelance web developers Founders and Coders; Chapel Street Studio Co-operative, a communications service business from Bradford; digital news platform London Student; Plymouth-based co-working space provider, Dialogue; and Ceramics Studio from London all received £2,000 to develop innovative new co-op enterprises, plus mentoring and support. They went on to form the Young Cooperators Network with Altgen and Blake House Studio. 
+          </p>
+        </div> 
+        <div id="three" class="content">
+          <h3>3</h3> 
+          <p>
+          <br>
+          The Young Cooperators Network 
+          <br><br>
+          The Young Co-operators Network (YCN) is a group of cooperative enterprises that come together to build the cooperative economy. We gather 4 times a year to think big and small: from building ‘the commons’ to how to ensure invoice are paid on time. We also organise educational weekends on various themes. If you are interested in joining the group, 
+          </p>
+        </div> 
+      </div>
     </div> 
     <div class="subsection" id="what">
       <h2>What we do</h2> 
@@ -75,6 +120,23 @@
       </div>
     </div>
   </div>
-  
+  <script type="text/javascript"> 
+
+    var els = document.querySelectorAll("#header #menu li a")
+    document.onscroll = onsectionchange
+    
+    function onsectionchange() {
+      var url = document.URL
+      console.log(url)
+      if (els) {
+        Array.prototype.forEach.call(els, (function (el) {
+          if (el.href === url)
+            el.style['text-decoration'] = "line-through";
+          else
+            el.style['text-decoration'] = "none";
+        }))
+      }
+    }
+    </script>
 </body>
 </html>

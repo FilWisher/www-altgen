@@ -46,10 +46,11 @@ body {
 
 #header #menu li a { 
   text-decoration: none;
-  margin-right: 1em;
+  margin-right: 1.7em;
   color: black;
 }
 #header #menu li a:visited { color: black; }
+#header #menu li a:active { color: blue; }
 
 #content {
   padding-left: 1%;
@@ -63,17 +64,72 @@ body {
   height: 60em;
 }
 
+
+#content .subsection#landing #announcement {
+  height: 15em;
+  width: 15em;
+  float: left;
+}
+
+#content .subsection#landing #announcement .circle {
+  background-color: rgb(255, 240, 0);
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#content .subsection#landing #announcement .circle span {
+  color: rgb(255, 70, 0);
+  font-size: 1.5em;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#content .subsection#landing #video {
+  background-color: black;
+  width: 30em;
+  height: 17em;
+  float: left;
+  margin-left: 5em;
+}
+
 #content .subsection#manifesto #content {
   width: 33.3%;
-  background-color: rgb(255, 250, 0);
+  background-color: rgb(255, 240, 0);
   padding: 1em;
   margin-left: 33.3%;
   letter-spacing: 0.8px;
 }
 
-span.red {
-  color: rgb(255, 70, 0);
+.col {
+  float: left;
 }
+
+#content .subsection#about #left {
+  width: 40%;
+}
+#content .subsection#about #right {
+  margin-left: 1.5em;
+  width: 55%;
+}
+
+#content .subsection#about .content h3 {
+  font-size: 2em;
+  font-weight: bold;
+}
+#content .subsection#about .content {
+  background-color: rgb(255, 240, 0);
+  width: 100%;
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+}
+
+.redf { color: rgb(255, 70, 0); }
+.redbg { background-color: rgb(255, 70, 0); }
+
+.bold { font-weight: 700; }
 
 #footer {
   padding: 2em 0;
@@ -98,7 +154,6 @@ span.red {
   margin-bottom: 0.5em;
 }
 
-#footer .col { float: left; }
 #footer #col-1 { width: 20vw; height: 10px;}
 #footer #col-2 { width: 45vw; }
 #footer #col-2 p { 
