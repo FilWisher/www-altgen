@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;  
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background: white url("hands.svg") fixed no-repeat bottom;
+}
+
+#header {
+  position: fixed;
+  background-color: white;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  float: left;
+}
+
+#header #logo {
+  margin: 1em 0 2em 0;
+}
+
+#header #logo img {
+  height: 3.5em;
+}
+
+#header #logo h3 { letter-spacing: 1.5px; }
+
+#header #menu {
+  padding: 0;
+  border-top: 3px solid rgb(255, 70, 0);
+  border-bottom: 3px solid rgb(255, 70, 0);
+  padding: 1% 0;
+  display: inline-block;
+}
+
+#header #menu li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.05em;
+}
+
+#header #menu li a { 
+  text-decoration: none;
+  margin-right: 1em;
+  color: black;
+}
+#header #menu li a:visited { color: black; }
+
+#content {
+  padding-left: 1%;
+  padding-top: 1%;
+  float: left;
+  clear: both;
+}
+
+#content .subsection {
+  padding-top: 28vh;
+  height: 60em;
+}
+
+#content .subsection#manifesto #content {
+  width: 33.3%;
+  background-color: rgb(255, 250, 0);
+  padding: 1em;
+  margin-left: 33.3%;
+  letter-spacing: 0.8px;
+}
+
+span.red {
+  color: rgb(255, 70, 0);
+}
+
+#footer {
+  padding: 2em 0;
+  background-color: rgb(255, 70, 0);
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10em;
+  color: white;
+}
+
+#footer .menu { 
+  padding: 0;
+  display: inline-block;  
+  margin-left: 2em;
+  font-size: 1.05em;
+}
+
+#footer .menu li { 
+  padding: 0; 
+  list-style: none;
+  margin-bottom: 0.5em;
+}
+
+#footer .col { float: left; }
+#footer #col-1 { width: 20vw; height: 10px;}
+#footer #col-2 { width: 45vw; }
+#footer #col-2 p { 
+  padding: 0 2em; 
+  font-size: 0.95em;
+  letter-spacing: 0.8px;
+}
+#footer #col-3 { width: 10vw; }
+#footer #col-4 { width: 15vw; }
