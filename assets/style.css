@@ -4,7 +4,7 @@
   box-sizing: border-box;  
   margin: 0;
   font-family: Roboto, sans-serif;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 body{
@@ -12,12 +12,11 @@ body{
 }
 
 a { text-decoration: none; }
-a:visited { color: black; }
-a:active { color: blue; }
 
 #logo { margin: 1em 0; }
-#logo img { height: 3.5em; }
+#logo img#logo { height: 3.5em; }
 #logo h3 { letter-spacing: 1.5px; }
+
 
 .red-borderx {
   border-top: 3px solid rgb(255, 70, 0);
@@ -36,7 +35,19 @@ a:active { color: blue; }
 
 #col-1 { height: 10px;}
 
+#footer li { height: 100%; }
+#footer li span {
+  display: block; 
+  font-size: 1.2em;
+  margin-top: 0.35em;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 1.2px;
+}
+
 /* positioning */
+
+
 .left{ float: left; }
 .right{ float: right; }
 .clear { clear: both; }
@@ -45,6 +56,9 @@ a:active { color: blue; }
 
 .m-auto { margin-left: auto; margin-right: auto; }
 .m0 { margin: 0; }
+.mr05 { margin-right: 0.5em; }
+.mr1 { margin-right: 1em; }
+.ml15 { margin-left: 1.5em; }
 .mr15 { margin-right: 1.5em; }
 .mr2 { margin-right: 2em; }
 .mb15 { margin-bottom: 1.5em; }
@@ -56,12 +70,16 @@ a:active { color: blue; }
 .w50 { width: 50%; }
 .w45 { width: 45%; }
 .w40 { width: 40%; }
+.w20 { width: 20%; }
+.w24 { width: 24%; }
 .w25 { width: 25%; }
 .w12 { width: 12.5%; }
 .w75 { width: 75%; }
 .wfill { width: 100%; }
 
 .h30 { height: 30em; }
+.h3 { height: 3em; }
+.w3 { width: 3em; }
 
 .hfill { height: 100%; }
 
@@ -71,6 +89,7 @@ a:active { color: blue; }
 .p15 { padding: 1.5em; }
 .p2 { padding: 2em; }
 .py0 { padding-top: 0; padding-bottom: 0em;}
+.py1 { padding-top: 1em; padding-bottom: 1em;}
 .py05 { padding-top: 0.5em; padding-bottom: 0.5em;}
 .py2 { padding-top: 2em; padding-bottom: 2em;}
 .px0 { padding-left: 0; padding-right: 0;}
@@ -81,6 +100,25 @@ a:active { color: blue; }
 .bold { font-weight: 700; }
 .red-text { color: rgb(255, 70, 0); }
 .white-text { color: white; }
+.black-text { color: black; }
+.black-text:visited { color: black; }
+.black-text:active { color: black; }
+.white-text { color: white; }
+.white-text:visited { color: white; }
+.white-text:active { color: white; }
+
+.smaller {font-size: 0.8em; }
+.medium {font-size: 1.2em;}
+.bigger {font-size: 2em;}
+.fw300 { font-weight: 300; }
+.fw400 { font-weight: 400; }
+.fw500 { font-weight: 500; }
+.ls1 { letter-spacing: 1px; }
+
+.center-text { text-align: center; }
+
+.lh15 { line-height: 15em; }
+
 
 .yellow-bg { background-color: rgb(255, 240, 0); }
 .white-bg { background-color: white; }
@@ -91,3 +129,7 @@ a:active { color: blue; }
 .l-to-r { left: 0; right: 0; }
 
 .square15 { height: 15em; width: 15em; }
+
+.circle { border-radius: 100%; }
+
+.vertical-middle { vertical-align: middle; }
