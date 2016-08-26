@@ -9,7 +9,6 @@
 
 body{
   background: white url("hands.svg") fixed no-repeat bottom;
-  /*ma*/
 }
 
 a { text-decoration: none; }
@@ -138,3 +137,5 @@ a { text-decoration: none; }
 .circle { border-radius: 100%; }
 
 .vertical-middle { vertical-align: middle; }
+
+.active { border-bottom: 2px solid #000; }
