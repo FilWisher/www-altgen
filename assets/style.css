@@ -16,6 +16,8 @@ a { text-decoration: none; }
 #logo { margin: 1em 0; }
 #logo img#logo { height: 3.5em; }
 #logo h3 { letter-spacing: 1.5px; }
+#explanatory-text { visibility: hidden; }
+#header { height: 215px; }
 
 
 .red-borderx {
@@ -113,6 +115,7 @@ a { text-decoration: none; }
 .fw300 { font-weight: 300; }
 .fw400 { font-weight: 400; }
 .fw500 { font-weight: 500; }
+.fw800 { font-weight: 800; }
 .ls1 { letter-spacing: 1px; }
 
 .center-text { text-align: center; }
@@ -121,6 +124,7 @@ a { text-decoration: none; }
 
 
 .yellow-bg { background-color: rgb(255, 240, 0); }
+.yellow-bg__list { list-style: square; }
 .white-bg { background-color: white; }
 .black-bg { background-color: black; }
 .red-bg { background-color: rgb(255, 70, 0); }
@@ -133,3 +137,5 @@ a { text-decoration: none; }
 .circle { border-radius: 100%; }
 
 .vertical-middle { vertical-align: middle; }
+
+.active { border-bottom: 2px solid #000; }
