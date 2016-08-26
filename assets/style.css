@@ -122,6 +122,7 @@ a { text-decoration: none; }
 
 .yellow-bg { background-color: rgb(255, 240, 0); }
 .yellow-bg__title { font-weight: bold; }
+.yellow-bg__list { list-style: square; }
 .white-bg { background-color: white; }
 .black-bg { background-color: black; }
 .red-bg { background-color: rgb(255, 70, 0); }
