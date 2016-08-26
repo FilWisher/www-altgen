@@ -116,6 +116,7 @@ a { text-decoration: none; }
 .fw300 { font-weight: 300; }
 .fw400 { font-weight: 400; }
 .fw500 { font-weight: 500; }
+.fw800 { font-weight: 800; }
 .ls1 { letter-spacing: 1px; }
 
 .center-text { text-align: center; }
@@ -124,7 +125,6 @@ a { text-decoration: none; }
 
 
 .yellow-bg { background-color: rgb(255, 240, 0); }
-.yellow-bg__title { font-weight: bold; }
 .yellow-bg__list { list-style: square; }
 .white-bg { background-color: white; }
 .black-bg { background-color: black; }
