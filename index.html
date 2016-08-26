@@ -15,7 +15,7 @@
         </a>
         <h3 class='fw400'>Together <span class="red-text fw500">we're stronger</span></h3>
       </div>
-      <p class='inline-block w25 ml15 smaller fw500 ls1'>
+      <p class='inline-block w25 ml15 smaller fw500 ls1' id="explanatory-text">
       Altgen supports young people to set up worker's co-operatives as a collaborative and empowering solution to fix our broken economy. Our aim is to re-imagine the future of work by creating a more equal, democratic, and sustainable economy today.          
       </p>
       <div class='right'>
@@ -243,8 +243,11 @@
   </div>
   <script type="text/javascript"> 
 
-    var els = document.querySelectorAll("#header #menu li a")
+    var els = document.querySelectorAll("#header #menu li a");
+    var explanatory = document.getElementById("explanatory-text");
+    var header = document.getElementById("header");
     document.onscroll = onsectionchange
+
    
     function onsectionchange() {
       var url = document.URL
@@ -257,6 +260,18 @@
         }))
       }
     }
+
+  function toggleExplanatoryText() {
+    header.addEventListener('mouseover', function() {
+      explanatory.style.visibility  = 'visible'; 
+    })
+    header.addEventListener('mouseleave', function() {
+      explanatory.style.visibility = 'hidden'; 
+    });
+
+  }
+
+    toggleExplanatoryText();
     </script>
 </body>
 </html>

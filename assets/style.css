@@ -17,6 +17,8 @@ a { text-decoration: none; }
 #logo { margin: 1em 0; }
 #logo img#logo { height: 3.5em; }
 #logo h3 { letter-spacing: 1.5px; }
+#explanatory-text { visibility: hidden; }
+#header { height: 215px; }
 
 
 .red-borderx {
