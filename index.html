@@ -245,7 +245,7 @@
 
     var els = document.querySelectorAll("#header #menu li a");
     var explanatory = document.getElementById("explanatory-text");
-    var header = document.getElementById("header");
+    var logo = document.getElementById("logo");
     document.onscroll = onsectionchange
 
    
@@ -262,10 +262,10 @@
     }
 
   function toggleExplanatoryText() {
-    header.addEventListener('mouseover', function() {
+    logo.addEventListener('mouseover', function() {
       explanatory.style.visibility  = 'visible'; 
     })
-    header.addEventListener('mouseleave', function() {
+    logo.addEventListener('mouseleave', function() {
       explanatory.style.visibility = 'hidden'; 
     });
 
