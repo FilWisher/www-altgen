@@ -23,7 +23,7 @@ p {
 #logo img#logo { height: 3.5em; }
 #logo h3 { letter-spacing: 1.5px; }
 #explanatory-text { visibility: hidden; }
-#header { height: 215px; }
+#header { height: 215px; z-index: 100; }
 
 .red-borderx {
   border-top: 3px solid rgb(255, 70, 0);
@@ -39,11 +39,13 @@ p {
 #content .subsection#landing #video {
   width: 30em;
   height: 17em;
+	margin-left: 20%;
 }
 
 #menu { background-color: #fff; }
 #col-1 { height: 10px;}
 
+#footer { bottom: 1em; }
 #footer li { height: 100%; }
 #footer li span {
   display: block; 
@@ -141,6 +143,7 @@ p {
 .ls1 { letter-spacing: 1px; }
 
 .center-text { text-align: center; }
+.italic { font-style: italic; }
 
 .lh15 { line-height: 15em; }
 
@@ -152,11 +155,22 @@ p {
 .red-bg { background-color: rgb(255, 70, 0); }
 .fixed { position: fixed; }
 .absolute { position: absolute; }
+.relative {	position: relative; }
 .l-to-r { left: 0; right: 0; }
 
-.square15 { height: 15em; width: 15em; }
+.square15 { height: 25em; width: 25em; }
 
-.circle { border-radius: 100%; }
+.circle {
+	border-radius: 100%;
+	margin-left: 50%;
+	margin-top: 7em;
+}
+
+.circle h1 {
+	font-size: 3.7em;
+}
+
+.center-vertically { top: 50%; transform: translateY(-50%); }
 
 .vertical-middle { vertical-align: middle; }
 
