@@ -82,10 +82,15 @@ p {
   letter-spacing: 1.2px;
 }
 
+.control {
+  display: inline-block;
+}
+
 /* positioning */
 
 .h90 { height: 90%; }
 .h32 { height: 3.2em; }
+.h20 { height: 20em; }
 .h2 { height: 2em; }
 
 .left{ float: left; }
@@ -200,7 +205,6 @@ p {
 .blue-bg { background-color: rgb(165, 220, 230); }
 .grey-bg { background-color: #cdcdcd; }
 .white-bg { background-color: white; }
-.black-bg { background-color: black; }
 .red-bg { background-color: rgb(255, 70, 0); }
 .fixed { position: fixed; }
 .absolute { position: absolute; }
@@ -226,8 +230,3 @@ p {
 .vertical-top { vertical-align: top; }
 
 .active { border-bottom: 2px solid #000; }
-
-.photo {
-  background-color: grey;
-  height: 5em;
-}

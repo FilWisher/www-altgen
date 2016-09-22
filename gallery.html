@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Altgen: Together We're Stronger</title>
-  <link rel="stylesheet" href="assets/style.css">
+ </p> <link rel="stylesheet" href="assets/style.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -21,7 +21,6 @@
       </p>
       <div class='right'>
         <a class='mr1 pt05 link' href='/'>Home</a>
-        <a href=''><img class='vertical-middle w25em mr05' src="assets/camera.svg"></a>
         <a href='https://twitter.com/altgen101'><img class='vertical-middle w2em mr05' src="assets/twitter.svg"></a>
         <a href='https://www.facebook.com/altgen101'><img class='vertical-middle w18em mr2' src="assets/facebook.png"></a>
       </div>
@@ -34,18 +33,20 @@
    
       <div class='w60 left'>
         
-        <div class='wfill left red-bg mh500'>
-          <img class='wfill' src='assets/planning.jpg'>
-        </div> 
+        <div class='wfill left mh500'>
+          <img id='photo-gallery' class='wfill' src='https://cloud.githubusercontent.com/assets/8480417/18751584/749b6216-80d7-11e6-9473-a3111759501f.jpg'>
+          <a href='#' class='control left' onclick='prev_image()'>&lt;&lt;</a>
+          <a href='#' class='control right' onclick='next_image()'>&gt;&gt;</a>
+        </div>
         
-        <div class='w60 clear right blue-bg mt3 mrn3'>
-          <img class='wfill' src='assets/dont-climb.jpg'>
+        <div class='w60 clear right mt3 mrn3'>
+          <img class='wfill' src='https://cloud.githubusercontent.com/assets/8480417/18753612/cd37daf2-80dd-11e6-9e4c-b5c2f547659e.gif'>
         </div> 
       </div>
       
       <div class='w40 left'>
         
-        <div class='w70 right orange-bg'>
+        <div class='w70 right'>
           <img class='wfill' src='assets/poster.svg'>
         </div>
       </div>
@@ -56,21 +57,25 @@
   <div class="px0 py06 red-bg white-text" id="footer">
     <ul class='list-reset wfill'>
       <li class='inline-block w24 center-text p0 m0'>
-        <a href='#contact'>
+        <a href='../#contact'>
           <img class='m-auto h2' src="assets/letter.svg">
           <span class='bold vertical-middle'>CONTACT US</span>
         </a>
       </li> 
       <li class='inline-block w24 center-text p0 m0'>
-        <img class='m-auto h2' src="assets/ladder.svg">
-        <span class='bold vertical-middle'>BOOK A WORKSHOP</span>
+        <a href='../#what'>
+          <img class='m-auto h2' src="assets/ladder.svg">
+          <span class='bold vertical-middle'>BOOK A WORKSHOP</span>
+        </a>
       </li> 
       <li class='inline-block w24 center-text p0 m0'>
-        <img class='m-auto h2' src="assets/box.svg">
-        <span class='bold vertical-middle'>BE PART OF IT</span>
+        <a href='http://eepurl.com/cgnp7P'>
+          <img class='m-auto h2' src="assets/box.svg">
+          <span class='bold vertical-middle'>BE PART OF IT</span>
+        </a>
       </li> 
       <li class='inline-block w24 center-text p0 m0'>
-        <a href='#about'>
+        <a href='../#about'>
           <img class='m-auto h32' src="assets/hug.svg">
           <span class='bold vertical-middle'>ABOUT US</span>
         </a>
@@ -79,29 +84,31 @@
   </div>
 
 <script type="text/javascript"> 
-/*
   var images = 
-    [ './assets/doanything.jpg'
-    , './assets/gathering.jpg'
-    , './assets/launch.jpg'
-    , './assets/planning.jpg'
-    , './assets/space.jpg'
-    , './assets/talking.jpg'
-    , './assets/workshop.jpg'
-    , './assets/ycn.jpg'
+    [ '18751584/749b6216-80d7-11e6-9473-a3111759501f.jpg'
+    , '18751588/74a4f4ac-80d7-11e6-8ddd-e903c5a77fde.jpg'
+    , '18751585/74a00096-80d7-11e6-9a5b-5ea51905965e.jpg'
+    , '18751586/74a1c3b8-80d7-11e6-8c3f-2269dbd75807.jpg'
+    , '18751587/74a42a40-80d7-11e6-9a3e-8d78610047c8.jpg'
+    , '18751590/74b3b262-80d7-11e6-816c-8d78d35bc45c.jpg'
+    , '18751591/74b7532c-80d7-11e6-8fd0-fefe3c4a1f0b.jpg'
     ]
+  var baseurl = 'https://cloud.githubusercontent.com/assets/8480417/'
   var ii = 0
-  val gallery = document.querySelector("whiteBox")
+  var gallery = document.querySelector("#photo-gallery")
   function next_image() {
-    len = images.length
-    ii = ii+1 < len ? ii+1 : len
-    if (gallery) gallery.style.background = 'url(' + images[ii] + ')'
+    ii += 1
+    ii %= images.length
+    var url = baseurl + images[ii]
+    if (gallery) gallery.src = url
   }
   function prev_image() {
-    ii = 0 > ii-1 ? 0 : ii-1
-    if (gallery) gallery.style.background = 'url(' + images[ii] + ')'
+    ii -= 1
+    ii = ii < 0 ? images.length - 1 : ii
+    console.log(ii)
+    var url = baseurl + images[ii]
+    if (gallery) gallery.src = url
   }
-  */
 </script> 
 </body>
 </html>
