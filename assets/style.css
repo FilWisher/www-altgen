@@ -240,7 +240,7 @@ p {
 .active { border-bottom: 2px solid #000; }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-device-width: 768px) {
   #content .subsection {
     width: 50%;
   }
@@ -250,7 +250,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-device-width: 768px) {
   #content .subsection {
     width: 100%;
   }
