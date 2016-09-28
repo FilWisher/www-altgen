@@ -17,7 +17,6 @@ p {
 
 .background {
   background: url("hands.svg") fixed no-repeat;
-  background-size: 74% 74%;
   background-position: bottom;
 }
 
@@ -248,10 +247,28 @@ p {
   #content .subsection .content {
     max-width: 700px;
   }
+  .menu-item {
+    margin-right: 1.5em;
+  }
+  .background {
+    background-size: 74% 74%;
+  }
 }
 
 @media only screen and (max-device-width: 768px) {
+
+  #menu {
+    width: 100%;
+  }
+  .menu-item {
+    width: 13%; 
+    text-align: center;
+  }
+
   #content .subsection {
     width: 100%;
+  }
+  .background {
+    background-size: 100% 100%;
   }
 }
