@@ -46,6 +46,12 @@ p {
   clear: both;
 }
 
+#content .subsection-full {
+  padding-top: 25vh;
+  padding-bottom: 10em;
+  clear: both;
+}
+
 #content .gallery {
   padding-top: 23vh;
   padding-bottom: 15em;
@@ -199,7 +205,9 @@ p {
 .lh15 { line-height: 15em; }
 
 
-.yellow-bg { background-color: rgb(255, 245, 5); }
+.pink-bg { background-color: rgb(248, 186, 195); }
+.green-bg { background-color: rgb(150, 165, 5); }
+.yellow-bg { background-color: rgb(248, 225, 0); }
 .orange-bg { background-color: rgb(250, 170, 0); }
 .purple-bg { background-color: rgb(155, 180, 230); }
 .blue-bg { background-color: rgb(165, 220, 230); }
@@ -230,3 +238,20 @@ p {
 .vertical-top { vertical-align: top; }
 
 .active { border-bottom: 2px solid #000; }
+
+
+@media only screen and (min-width: 768px) {
+  #content .subsection {
+    width: 50%;
+  }
+  
+  #content .subsection .content {
+    max-width: 700px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #content .subsection {
+    width: 100%;
+  }
+}
