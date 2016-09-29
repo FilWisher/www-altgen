@@ -15,9 +15,12 @@ p {
   letter-spacing: 1px;
 }
 
-.background {
-  background: url("hands.svg") fixed no-repeat;
-  background-position: bottom;
+li {
+  margin-bottom: 1em;
+}
+
+.list-reset li {
+  margin-bottom: 0;
 }
 
 .link {
@@ -240,7 +243,13 @@ p {
 
 
 @media only screen and (min-device-width: 768px) {
-  
+
+  .background {
+    background: url("hands.svg") fixed no-repeat;
+    background-position: bottom;
+    background-size: 74% 74%;
+  }
+
   #content {
     width: 95%;
   }
@@ -252,12 +261,6 @@ p {
   #content .subsection .content {
     max-width: 700px;
   }
-  .menu-item {
-    margin-right: 1.5em;
-  }
-  .background {
-    background-size: 74% 74%;
-  }
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -265,15 +268,12 @@ p {
   #menu {
     width: 100%;
   }
-  .menu-item {
-    width: 13%; 
-    text-align: center;
-  }
 
   #content .subsection {
     width: 100%;
   }
-  .background {
-    background-size: 100% 100%;
-  }
+}
+
+.biggest {
+  font-size: 2.9em;
 }
